@@ -1,0 +1,138 @@
+/* Container and Text Styling */
+body {
+    background-color: black;
+}
+
+.about-container {
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: black;
+}
+
+.about-heading {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-intro {
+    font-size: 1.3rem;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.points-section h3 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.about-points {
+    list-style: none;
+    padding: 0;
+}
+
+.about-points li {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.about-conclusion {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: white;
+    /* Navigation bar color */
+    padding: 10px 20px;
+    /* Padding around the navbar */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space between logo and menu */
+    align-items: center;
+    /* Center align items vertically */
+}
+
+.navbar-logo {
+    color: black;
+    /* Logo text color */
+    font-size: 2rem;
+    /* Logo text size */
+}
+
+.navbar-menu {
+    list-style-type: none;
+    /* Remove bullet points from list */
+    display: flex;
+    /* Flexbox layout for menu */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+    /* Space between menu items */
+}
+
+.navbar-menu a {
+    color: black;
+    /* Menu item text color */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-size: 1.5rem;
+    /* Menu item text size */
+    transition: color 0.3s;
+    /* Transition effect for hover */
+}
+
+.navbar-menu a:hover {
+    color: black;
+    /* Change text color on hover */
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .about-container {
+        padding: 15px;
+    }
+
+    .about-heading {
+        font-size: 1.6rem;
+    }
+
+    .points-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-points li {
+        font-size: 0.9rem;
+    }
+
+    .about-conclusion {
+        font-size: 1rem;
+    }
+
+    .navbar-menu li {
+        margin-left: 10px;
+        /* Adjust space for smaller screens */
+    }
+}

@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 80px;
+    /* Adjusted to the navbar height */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: white;
+    /* Background color for navbar */
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* Set top to 0 to keep it at the top */
+    left: 0;
+    z-index: 1000;
+    /* Ensure it's on top of other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for better visibility */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Added padding for spacing */
+}
+
+.navbar-logo {
+    font-size: 30px;
+    /* Logo font size */
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    /* Increased font size for links */
+}
+
+a.active,
+.navbar-menu a:hover {
+    background: red;
+    /* Change background on hover */
+    transition: .5s;
+    /* Smooth transition */
+}
+
+/* Contact Form Styles */
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #488cfb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #29dbbc;
+}
+
+.response {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+    /* Success message color */
+}

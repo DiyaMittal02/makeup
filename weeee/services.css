@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    background-color: black;
+    margin: 0;
+    /* Remove default margin */
+    padding-top: 80px;
+    /* Adjusted to the navbar height */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: white;
+    /* Background color for navbar */
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* Set top to 0 to keep it at the top */
+    left: 0;
+    z-index: 1000;
+    /* Ensure it's on top of other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for better visibility */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Added padding for spacing */
+}
+
+.navbar-logo {
+    font-size: 2.5rem;
+    /* Logo font size */
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    /* Increased font size for links */
+}
+
+/* Services Section Styles */
+.services-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: black;
+    margin: 20px;
+    /* Add margin to separate it from other elements */
+}
+
+.services-heading {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.services-intro {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.services-paragraph {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.read-more-btn {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+}
+
+.read-more-btn::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#488cfb, #29dbbc, #ddf505, #ff9f0e, #e440bb, #655adc, #488cfb);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-clip: 10;
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+}
+
+.read-more-btn:hover::after {
+    animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+.read-more-btn,
+.read-more-btn::after {
+    box-sizing: border-box;
+}
+
+.read-more-btn:active {
+    --border-width: 5px;
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+/* Image Styling */
+.image-grid img {
+    width: 70%;
+    /* Reduced image size to 70% of its container */
+    object-fit: cover;
+    /* Ensures the image is cropped to fit */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | SirenShades_by_shubhi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SirenShades_by_shubhi</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="mail.html">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="text-image-container">
+            <div class="text-content">
+                <h1 class="heading">Discover Your Radiance with SirenShades_by_shubhi</h1>
+                <p class="intro-paragraph">At SirenShades_by_shubhi, we believe that every individual deserves to shine
+                    with
+                    confidence and elegance.</p><br>
+                <p class="paragraph" id="paragraph" style="display: none;">Our salon specializes
+                    in creating bold, alluring, and captivating makeup looks that enhance your natural beauty and make
+                    you
+                    feel truly exceptional. Whether you're preparing for a special occasion, a night out, or simply want
+                    to indulge in a luxurious makeover, our team of expert artists is dedicated to delivering
+                    personalized
+                    service and flawless results. We use high-quality products and the latest techniques to ensure you
+                    leave feeling glamorous and rejuvenated. Embrace your inner radiance and let us transform your look
+                    into a masterpiece.
+                </p>
+                <button class="read-more-btn" onclick="toggleParagraph()">Read More</button><br>
+            </div>
+            <div class="image-container">
+                <img src="makeup2.png" alt="Description of Image">
+                <div class="image-text">Bold, alluring, captivating makeup looks</div>
+            </div>
+        </div>
+
+
+
+        </div>
+        <div class="content-conatiner">
+            <h2 class="heading1">Services We Offer</h2>
+            <p class="intro-paragraph 1" style="color: black;">At SirenShades by Shubhi, we specialize in transforming
+                your look with expert
+                hairstyling and flawless makeup artistry</p>
+            <p class="service-paragraph" id="service-paragraph" style="color: black; display: none;">Whether you're
+                preparing
+                for a
+                glamorous event, a
+                casual day out, or a life-changing occasion, our skilled professionals bring creativity and precision to
+                every style. With personalized consultations and a deep understanding of the latest trends, we craft
+                breathtaking hairstyles and stunning makeup looks that enhance your natural beauty. Step into a world of
+                elegance and sophistication, and let us create the perfect look for you.</p>
+
+            <button class="service-more-btn" onclick="toggleServiceParagraph()">Read More</button><br>
+            <div class="image-wrapper">
+                <img src="makeup4.png" alt="Makeup" class="service-image">
+                <img src="makeup5.png" alt="Hairstyling" class="service-image">
+                <img src="makeup11.png" class="service-image">
+                <img src="makeup13.png" class="service-image">
+            </div>
+            <div class="btn">
+                <button class="explore-more-btn">Explore More</button>
+            </div>
+
+
+
+        </div>
+        <div class="new-content-conatiner">
+            <p class="container-title">What Our Clients Says</p>
+
+            <div class="gradient-cards">
+                <div class="card">
+                    <div class="container-card bg-green-box">
+
+                        <p class="card-title">Unmatched Elegance: A Flawless Look That Endures</p>
+                        <p class="card-description">The experience was nothing sort of exceptional!. The makeup not only
+                            looked flawless but also stayed intact for hours, even through a long day of events. The
+                            attention to detail and the quality of products used made me feel confident and radiant
+                            throught out.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container-card bg-white-box">
+
+                        <p class="card-title">A First-Time Experience Turned Perfect: Makeup That Captures Your Vision
+                        </p>
+                        <p class="card-description">It was my first time getting makeup done and I was a bit nervous,
+                            but you made me fell completly at ease. You listened carefully and delivered exactly the
+                            look I wanted. I couldn't be happier with the results!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container-card bg-yellow-box">
+
+                        <p class="card-title">Elegance Redefined: Makeup Mastery at Its Best</p>
+                        <p class="card-description">I just wanted to drop a quick note to say your makeup skills are
+                            absolutely top-notch!.I was blown away by the elegant and sophisticated vibe you brought to
+                            my look</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="container-card bg-blue-box">
+
+                        <p class="card-title">Beyond Expectations: Makeup Perfection Tailored to You</p>
+                        <p class="card-description">I was absolutely thrilled with the results!. The makeup turned out
+                            even better than I imagined – it couldn’t have been more
+                            perfect. Everything was on point and tailored exactly to my request. I couldn’t be
+                            more pleased</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-conatiner">
+                <h2 class="heading1">Contact Us</h2>
+                <p class="service-summary">
+                    At SirenShades_by_shubhi, your satisfaction is our top priority. We are here to answer any questions
+                    you
+                    may have and provide the support you need. Whether you have inquiries about our services, wish to
+                    schedule an appointment, or need assistance with something specific, do not hesitate to reach
+                    out.Contact us today
+                    and let us help you enhance your natural beauty and confidence.
+
+                    <br>You can reach us through the following channels:
+
+                    <br>Phone: 7060119175
+                    <br>Email: shubhimaheshwarimua@gmail.com
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="background.js"></script>
+</body>
+
+</html>

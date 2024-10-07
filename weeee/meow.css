@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding-top: 80px;
+    /* Ensure no overlap with the navbar */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: white;
+    /* Background color for navbar */
+    height: 80px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    padding: 0 20px;
+    /* Horizontal padding for the navbar */
+}
+
+label.logo {
+    color: black;
+    font-size: 40px;
+    /* Increased font size for the logo */
+    font-weight: bold;
+    margin-right: auto;
+    /* Pushes the logo to the left */
+}
+
+nav ul {
+    display: flex;
+    /* Use flexbox for list items */
+    margin-left: auto;
+    /* Pushes the list to the right */
+}
+
+nav ul li {
+    list-style: none;
+    /* Remove default list style */
+    margin: 0 15px;
+    /* Space between items */
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    /* Increased font size for links */
+    padding: 10px 15px;
+    /* Increased padding for larger click area */
+    border-radius: 5px;
+    /* Increased border radius for a smoother look */
+    text-transform: uppercase;
+    transition: background 0.5s;
+    /* Smooth transition */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: red;
+    /* Change background on hover */
+}
+
+/* Styles for services-container and other sections */
+.services-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: black;
+    margin: 20px;
+}
+
+.services-heading {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.services-intro {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.services-paragraph {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.read-more-btn {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+}
+
+/* Other styles remain unchanged... */
